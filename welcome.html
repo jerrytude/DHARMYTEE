@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharmytee</title>
+    <style>
+        .box {
+            background-image: url(one.jpg);
+            width: auto;
+            height: 700px;
+            
+            background-color: aqua;
+            background-size: cover;
+            position: relative;
+            overflow-y: hidden;
+            animation-name: cool;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cool {
+            20% {
+                background-image: url(one.jpg);
+                background-repeat: no repeat;
+                background-size: cover;
+            }
+            50% {
+                background-image: url(two.jpg);
+                background-repeat: no repeat;
+                background-size: cover;
+            }
+            90% {
+                background-image: url(use.jpg);
+                background-repeat: no repeat;
+                background-size: cover;
+            }
+        }
+        .one, .two, .three {
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            height: 250px;
+            width: 750px;
+            color: black;
+            transform: translateY(300%);
+        }
+        p{
+            font-size: 50px;
+        }
+        button {
+            padding: 10px;
+            background-color: blueviolet;
+            color: chartreuse;
+            border: none;
+            border-radius: 20px;
+        }
+        .one {
+            animation-name: one;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        .two {
+            animation-name: two;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        .three {
+            animation-name: three;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes one {
+            5%{
+                transform: translateY(0%);
+            }
+            20% {
+                transform: translateY(0%);
+            }
+            30% {
+                transform: translateY(300%);
+            }
+            60% {
+                transform: translateY(300%);
+            }
+        }
+        @keyframes two {
+            0% {
+                transform: translateY(300%)
+            }
+            25% {
+                transform: translateY(300%);
+            }
+            30% {
+                transform: translateY(0%);
+            }
+            50% {
+                transform: translateY(0%);
+            }
+            60% {
+                transform: translateY(300%);
+            }
+        }
+        @keyframes three {
+            0% {
+                transform: translateY(300%);
+            }
+            20% {
+                transform: translateY(300%);
+            }
+            30% {
+                transform: translateY(300%);
+            }
+            60% {
+                transform: translateY(300%);
+            }
+            70% { 
+                transform: translateY(0%);
+            }
+            80% {
+                transform: translateY(0%);
+            }
+            90% {
+                transform: translateY(0%);
+            }
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="one">
+        <p>Welcome to HOLYGRAIL property world</p>
+        <button>GET STARTED</button>
+    </div>
+    <div class="two">
+        <p>Come and buy what i am selling.<br> with flexible payment plans <br> u too can own lands in Epe</p>
+        <button>LET'S GET U STARTED</button>
+    </div>
+    <div class="three">
+        <p>A trial will convince and help u make up your mind</p>
+        <button>LINK ON BIO</button>
+    </div>
+</div>
+  
+</body>
+</html>

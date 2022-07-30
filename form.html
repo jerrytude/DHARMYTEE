@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+       input[type=text] {
+        padding: 5px;
+        margin-top: 3px;
+        border: none;
+        border-radius: 20px;
+        width: 100%;
+        background-color: aqua;
+    
+       }
+       input[ type=submit]{
+        padding: 10px;
+        margin-top: 3px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        background-color: aqua;
+       }
+       input[type=text]:focus {
+        background-color: brown;
+       }
+       input[type=submit]:hover {
+        background-color: brown;
+       }
+        
+        .box {
+            display: flex;
+            width: auto;
+            background-color: blue;
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+        }
+        .text {
+            width: 200px;
+            height: auto;
+            background-color: red;
+        }
+        </style>
+</head>
+<body>
+    <div class="box">
+        <div class="text">
+              <input type="text"  placeholder="first name"><br>
+              <input type="text"  placeholder="last name"><br>
+              <input type="submit">
+
+            </div>
+    </div>
+    
+</body>
+</html>

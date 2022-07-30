@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        nav{
+             display: flex;
+             background-color: aqua;
+             justify-content: space-between;
+             padding: 10px;
+        }
+        li {
+            display: inline;
+            padding: 10px;
+
+        }
+        a { 
+            text-decoration: none;
+            color: black;
+         }
+          a:hover{
+              color: red;
+          }
+          .logo{
+              color: violet;
+          }
+          @media screen and (max-width: 600px) {
+              li{
+                  display: block;
+                  text-align: center;
+              }
+              nav {
+                  display: block;
+              }
+              .last {
+                  text-align: center;
+              }
+          }
+               </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">HOLYGRAIL</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</li>
+            <li><a href="#">Team</li> 
+            <li><a href="#">Contact</li>
+        </ul>
+        <div class="last">
+            <input type="text" placeholder="search">
+        </div>
+
+
+
+
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{background: #lalala;
+        }
+        .loader{
+            display: flex;
+            align-items:center;
+            justify-content:space-between;
+            height: 50px;
+            margin: 50px auto;
+            width: 200px;
+        }
+    .loader div {
+        height: 20px;
+        width: 100%;
+        margin: 0  2px;
+        background: blue;
+        color: aqua;
+        text-align: center;
+        text-transform: uppercase;
+        animation: 0.5s infinite jumpy;
+    }
+    .loader div:nth-child(even) {
+        animation-delay: 0.2s;
+    }
+    @keyframes jumpy {
+        50%  {
+            height: 50px;
+            background: orange;
+        }
+
+
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div  class="loader">
+        <div>I</div>
+        <div>L</div>
+        <div>O</div>
+        <div>V</div>
+        <div>E</div> 
+        <div>Y</div>
+        <div>O</div>
+        <div>U</div>
+        <div>L</div>
+        <div>O</div>
+        <div>U</div>
+        <div>I</div>
+        <div>S</div>
+        <div>A</div>
+
+
+
+
+
+    </div>
+</body>
+</html>
